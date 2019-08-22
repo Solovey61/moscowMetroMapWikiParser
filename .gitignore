@@ -1,0 +1,10 @@
+.idea/
+*.iml
+target/
+*.json
+*.html
+.classpath
+.project
+.settings/
+*.swp
+*.orig
