@@ -34,6 +34,10 @@ public class Metro {
         stations.get(station.getLine()).add(station.getStation());
     }
 
+    public LinkedHashMap<String, ArrayList<String>> getStations() {
+        return stations;
+    }
+
     public ArrayList<ArrayList<Station>> getConnections() {
         return connections;
     }

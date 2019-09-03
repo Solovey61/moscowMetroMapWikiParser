@@ -15,5 +15,7 @@ public class Main {
 		MetroJson.save(metroFromWiki, Path.of("test.json"));
 		Metro metroLoaded = MetroJson.load(Path.of("test.json"));
 		System.out.println(metroFromWiki.equals(metroLoaded) ? "Metro's are identical" : "Something went wrong");
+
+		metroLoaded.getStations().forEach((line, stationsList) -> System.out.println(String.format("There is %d stations at line %s ", stationsList.size(), line)));
 	}
 }
